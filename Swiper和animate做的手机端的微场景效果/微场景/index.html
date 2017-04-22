@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/swiper-3.4.1.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="js/zepto.min.js"></script>
+  <script src="js/swiper-3.4.1.jquery.min.js"></script>
+  <script src="js/swiper.animate1.0.2.min.js"></script>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border: 0;
+    }
+
+    html,body,.swiper-container,.swiper-wrapper,.swiper-slide{
+      width: 100%;
+      height: 100%;
+    }
+    .s1{
+      background: #dfd2c0;
+    }
+    .s2{
+      background: #dee3e3;
+    }
+    .s3{
+      background: #2f3817;
+    }
+    .s4{
+      background: #4d331f;
+    }
+    .s5{
+      background: #afaba8;
+    }
+    .s6{
+      background: #52adad;
+    }
+    .s7{
+      background: #cf9a4a;
+    }
+    .s8{
+      background: #ecf4f8;
+    }
+
+    .swiper-slide img{
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+    .swiper-slide img:nth-child(1){
+      margin-left: -150px;
+      margin-top: -270px;
+      box-shadow: 10px 10px 10px;
+    }
+    .swiper-slide img:nth-child(2){
+      margin-left: -75px;
+      margin-top: -110px;
+      box-shadow: 0 0 80px;
+    }
+    .swiper-slide img:nth-child(3){
+      margin-left: -75px;
+      margin-top: 65px;
+      box-shadow: 0 0 30px;
+    }
+    .swiper-slide img:nth-child(4){
+      margin-left: -10px;
+      margin-top: 310px;
+    }
+    .swiper-slide img:nth-child(5){
+      margin-left: -15px;
+      margin-top: 300px;
+      animation: arr 1s infinite ease-in-out;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        margin-top: 590px;
+        text-shadow: 10px 10px 10px dimgrey;
+    }
+
+
+
+    @keyframes arr{
+      0%{transform: translateY(20px);opacity:0}
+      50%{transform: translateY(15px);opacity:1}
+      100%{transform: translateY(10px);opacity:0}
+    }
+
+
+      </style>
+
+<script>
+  $(function(){
+
+     var mySwiper = new Swiper ('.swiper-container', {
+     direction: 'vertical',
+     mousewheelControl : true,
+     onInit: function(swiper){                     //Swiper2.x的初始化是onFirstInit
+      swiperAnimateCache(swiper);           //隐藏动画元素
+      swiperAnimate(swiper);                    //初始化完成开始动画
+     },
+     onSlideChangeEnd: function(swiper){
+      swiperAnimate(swiper);                //每个slide切换结束时也运行当前slide动画
+       }
+    })
+
+  })
+
+
+</script>
+
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <!-- 第一屏动画 -->
+        <div class="swiper-slide s1">
+          <img src="images/tiger.jpg" width="300" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+          <img src="images/tiger _01.jpg" width="150" class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+          <img src="images/tiger_02.png" width="150" class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+          <img src="images/arr.png" width="18">
+          <p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">森林之王</p>
+        </div>
+
+        <!-- 第二屏动画 -->
+        <div class="swiper-slide s2">
+          <img src="images/raccoon.jpg" width="300" class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+          <img src="images/raccoon _01.jpg" width="150" class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+          <p class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">狡黠又呆萌的浣熊</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+        <!-- 第三屏动画 -->
+        <div class="swiper-slide s3">
+          <img src="images/peacock .jpg" width="300" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0">
+          <img src="images/peacock_01.jpg" width="160" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+          <img src="images/peacock_02.jpg" width="160" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1.5s" swiper-animate-delay="1s">尊贵而又美丽的孔雀</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+        <!-- 第四屏动画 -->
+        <div class="swiper-slide s4">
+          <img src="images/lion.jpg" width="300" class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0">
+          <img src="images/lion_01.png" width="180" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+          <img src="images/lion_02.png" width="180" class="ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="flash" swiper-animate-duration="1.5s" swiper-animate-delay="1s">威严的雄师</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+        <!-- 第五屏动画 -->
+        <div class="swiper-slide s5">
+
+          <img src="images/gorilla.jpg" width="300" class="ani" swiper-animate-effect="shake" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <img src="images/gorilla_01.png" width="150" class="ani" swiper-animate-effect="swing" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <img src="images/gorilla_02.jpg" width="150" class="ani" swiper-animate-effect="wobble" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="wobble" swiper-animate-duration="1.5s" swiper-animate-delay="1s">日常搞笑大猩猩</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+        <!-- 第六屏动画 -->
+        <div class="swiper-slide s6">
+
+          <img src="images/eagle.jpg" width="300" class="ani" swiper-animate-effect="flip" swiper-animate-duration="1.5s" swiper-animate-delay="1">
+          <img src="images/eagle_01.png" width="160" height="160" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
+          <img src="images/eagle_02.jpg" width="160" class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="rotateInUpRight" swiper-animate-duration="1.5s" swiper-animate-delay="1s">目光如炬的老鹰</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+        <!-- 第七屏动画 -->
+        <div class="swiper-slide s7">
+
+          <img src="images/camel.jpg" width="300" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <img src="images/camel_01.png" width="180" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
+          <img src="images/camel_02.jpg" width="180" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="bounce" swiper-animate-duration="1.5s" swiper-animate-delay="1s">可靠的骆驼</p>
+          <img src="images/arr.png" width="18">
+        </div>
+
+
+        <!-- 第八屏动画 -->
+        <div class="swiper-slide s8">
+
+          <img src="images/bear.jpg" width="300" class="ani" swiper-animate-effect="hinge" swiper-animate-duration="1.5s" swiper-animate-delay="1">
+          <img src="images/bear_01.jpg" width="150" class="ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
+          <img src="images/bear_02.jpg" width="150" class="ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
+          <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="1s">意志和力量兼备的白熊</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
