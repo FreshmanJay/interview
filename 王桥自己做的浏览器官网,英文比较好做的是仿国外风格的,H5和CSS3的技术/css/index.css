@@ -1,0 +1,774 @@
+@charset "utf-8";
+
+/* 公共类 */
+html,body,section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Microsoft Yahei";
+}
+
+section {
+  position: relative;
+}
+
+/* 侧边栏小球 */
+.scrollball {
+  width: 15px;
+  height: 260px;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.scrollball li {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  border: 1px solid #aaa;
+}
+
+.scrollball li.cur {
+  background: #fff;
+}
+
+/* 底部的导航栏 */
+.footer {
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color:#fff;
+  font-family: "Microsoft Yahei";
+}
+
+.footer>span,.footer li {
+  float: left;
+  padding: 8px;
+  transition: all 1s;
+}
+
+.footer ul {
+  float: right;
+  overflow: hidden;
+}
+
+.footer ul li a:hover {
+  color: #f80;
+  text-shadow: 3px 3px 8px #aaa;
+}
+
+/* 底部的滚动标志 */
+.scroll {
+  width: 30px;
+  height: 30px;
+  line-height: 40px;
+  box-shadow:5px 5px 10px;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  margin-left: -10px;
+  animation: scroll 3s infinite alternate;
+}
+
+@keyframes scroll {
+  0%{ transform: translateY(15px);}
+  100%{ transform: translateY(10px);}
+}
+
+/* 小图标 */
+.logo_small {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 280px;
+  height: 45px;
+  padding: 10px;
+  display: none;
+}
+
+.logo_small img {
+  float: left;
+}
+
+.logo_small a {
+  float: right;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* page part_01 (第一部分 第一屏)*/
+
+.part_01 {
+  background:  url(../images/homepage_pic.jpg) no-repeat;
+  opacity: 0.9;
+}
+
+.part_01 .nav {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.part_01 .nav_left {
+  float: left;
+}
+
+.part_01 .nav_left span {
+  background: url(../images/menu.png) no-repeat;
+}
+
+.part_01 .nav_right {
+  float: right;
+}
+
+.part_01 .nav_left a ,.part_01 .nav_right a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.part_01 .nav_right span:nth-child(1) {
+  background: url(../images/facebook.png) no-repeat;
+  transition: all 0.2s;
+}
+
+.part_01 .nav_right span:nth-child(1):hover {
+  background: url(../images/facebook.png) no-repeat 0 -33px;
+}
+
+.part_01 .nav_right span:nth-child(2) {
+  background: url(../images/twitter.png) no-repeat;
+  transition: all 0.2s;
+}
+
+.part_01 .nav_right span:nth-child(2):hover {
+  background: url(../images/twitter.png) no-repeat 0 -33px;
+}
+
+.part_01 .nav_right span:nth-child(3) {
+  background: url(../images/google.png) no-repeat;
+  transition: all 0.2s;
+}
+
+.part_01 .nav_right span:nth-child(3):hover {
+  background: url(../images/google.png) no-repeat 0 -33px;
+}
+
+.part_01 .nav .nav_left span,.part_01 .nav .nav_right span{
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin: 8px;
+}
+
+.part_01 .cen_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -269px;
+  margin-top: -100px;
+}
+
+.part_01 .cen_logo img {
+  animation: three_dimensional 3s infinite alternate;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+@keyframes three_dimensional{
+  0% { transform:translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1.4) scaleY(1.4) scaleZ(1.4);}
+  100% { transform:translateX(0) translateY(0) translateZ(0px) rotateX(45deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);}
+}
+
+.part_01 p {
+  font-size: 24px;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+  text-align: center;
+  text-shadow: 5px 5px 8px #000;
+}
+
+.part_01 .cen_button {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  background: #2189ff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: 20px;
+  box-shadow:5px 5px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.part_01 .cen_button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* page part_02 (第二部分 第二屏)*/
+
+.part_02 {
+  opacity:0.9;
+}
+
+.part_02 .nav_sec {
+  width: 100%;
+  height: 15%;
+  background: #ccc;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.part_02.current .nav_sec {
+  transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1.3) scaleZ(1);
+}
+
+.part_02 .nav_sec img {
+  float: right;
+  padding: 30px 90px;
+}
+
+.part_02 .nav_sec .download {
+  float: right;
+  width: 400px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.part_02 .nav_sec .download span {
+  display: inline-block;
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin: 8px;
+  background: #fff;
+}
+
+.part_02 .nav_sec .download span a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.part_02 .nav_sec .download span:nth-child(1) {
+  background: url(../images/facebook.png) no-repeat 0 -66px;
+}
+
+.part_02 .nav_sec .download span:nth-child(1):hover {
+  background: url(../images/facebook.png) no-repeat 0 -33px;
+}
+
+.part_02 .nav_sec .download span:nth-child(2) {
+  background: url(../images/twitter.png) no-repeat 0 -66px;
+}
+
+.part_02 .nav_sec .download span:nth-child(2):hover {
+  background: url(../images/twitter.png) no-repeat 0 -33px;
+}
+
+.part_02 .nav_sec .download span:nth-child(3) {
+  background: url(../images/google.png) no-repeat 0 -66px;
+}
+
+.part_02 .nav_sec .download span:nth-child(3):hover {
+  background: url(../images/google.png) no-repeat 0 -33px;
+}
+
+.part_02 .nav_sec .download .button {
+  width: 180px;
+  height: 50px;
+  background: #2189ff;
+  float: right;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.part_02 .nav_sec .download .button img {
+  padding: 15px;
+}
+
+.part_02 .nav_sec .download .button a {
+  display: inline-block;
+  line-height: 50px;
+}
+
+.part_02 .central {
+  width: 100%;
+  height: 15%;
+  background: url(../images/why-torch.png) no-repeat 0 0;
+  background-size: cover;
+}
+
+.part_02 .bottom {
+  width: 100%;
+  height: 70%;
+  background: url(../images/bg.jpg) no-repeat;
+}
+
+.part_02 .bottom .bom_cen {
+  width: 100%;
+  height: 100%;
+}
+
+.part_02 .bottom .bom_cen ul {
+  width: 60%;
+  height: 80%;
+  margin: 0 20%;
+}
+
+.part_02 .bottom .bom_cen ul li {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  float: left;
+  margin:5px 30px;
+  transition: all 1s;
+}
+
+.part_02.current .bottom .bom_cen ul li {
+  transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(60deg) rotateZ(0deg) scaleX(1.1) scaleY(1.1) scaleZ(1);
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(1) {
+  background: url(../images/facelift.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(1):hover {
+  background: url(../images/facelift.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(2) {
+  background: url(../images/games.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(2):hover {
+  background: url(../images/games.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(3) {
+  background: url(../images/mg.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(3):hover {
+  background: url(../images/mg.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(4) {
+  background: url(../images/music.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(4):hover {
+  background: url(../images/music.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(5) {
+  background: url(../images/player.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(5):hover {
+  background: url(../images/player.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(6) {
+  background: url(../images/torrent.jpg) no-repeat;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.part_02 .bottom .bom_cen ul li:nth-child(6):hover {
+  background: url(../images/torrent.jpg) no-repeat -200px 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* page part_03 (第三部分 第三屏)*/
+
+.part_03 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_03 .bottom {
+  width: 100%;
+  height: 85%;
+  background: skyblue;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_03 .bottom .fir {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -200px;
+  position: relative;
+}
+
+.part_03 .bottom .fir img:first-child {
+  margin-top: 50px;
+  z-index: 6;
+}
+
+.part_03 .bottom .fir img:last-child {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  z-index: 8;
+}
+
+.part_03 .bottom .seco {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 50px;
+  margin-top: -200px;
+}
+
+.part_03 .bottom .seco img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.part_03 .bottom .seco p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+
+.part_03 .bottom .seco span {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* page part_04 (第四部分 第四屏)*/
+
+.part_04 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_04 .bottom {
+  width: 100%;
+  height: 85%;
+  background: #29d385;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_04 .bottom .fir {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -200px;
+  position: relative;
+}
+
+.part_04 .bottom .fir img:first-child {
+  margin-top: 50px;
+  z-index: 6;
+}
+
+.part_04 .bottom .fir img:last-child {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  z-index: 8;
+}
+
+.part_04 .bottom .seco {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 100px;
+  margin-top: -200px;
+}
+
+.part_04 .bottom .seco img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.part_04 .bottom .seco p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+
+.part_04 .bottom .seco span {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* page part_05 (第五部分 第五屏)*/
+
+.part_05 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_05 .bottom {
+  width: 100%;
+  height: 85%;
+  background: #e74457;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_05 .bottom .seco {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -200px;
+}
+
+.part_05 .bottom .seco img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.part_05 .bottom .seco p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+
+.part_05 .bottom .seco span {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* page part_06 (第六部分 第六屏)*/
+
+.part_06 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_06 .bottom {
+  width: 100%;
+  height: 85%;
+  background: #1e0628;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_06 .bottom .seco {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -200px;
+}
+
+.part_06 .bottom .seco img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.part_06 .bottom .seco p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+
+.part_06 .bottom .seco span {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* page part_07 (第七部分 第七屏)*/
+
+.part_07 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_07 .bottom {
+  width: 100%;
+  height: 85%;
+  background: #1e0628;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_07 .bottom .seco {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -200px;
+}
+
+.part_07 .bottom .seco img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.part_07 .bottom .seco p {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+}
+
+.part_07 .bottom .seco span {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* page part_08 (第八部分 第八屏)*/
+
+.part_08 .top {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+}
+
+.part_08 .bottom {
+  width: 100%;
+  height: 85%;
+  background: #45619d;
+  overflow: hidden;
+  position: relative;
+}
+
+.part_08 .bottom .fir {
+  width: 800px;
+  height: 150px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -260px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.part_08 .bottom .seco {
+  width: 400px;
+  height: 360px;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -140px;
+  position: relative;
+}
+
+.part_08 .bottom .seco img {
+  padding:50px 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.part_08 .bottom .seco img:nth-child(1) {
+  position: absolute;
+  left: -180%;
+}
+
+.part_08 .bottom .seco img:nth-child(3) {
+  position: absolute;
+  left: 90%;
+}
