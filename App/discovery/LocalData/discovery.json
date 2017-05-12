@@ -1,0 +1,87 @@
+{
+  "data": [
+    {
+      "sData": {
+         "title": "",
+         "height": 20
+      },
+      "rData": [
+        {
+          "type": 0,
+          "leftIcon": "",
+          "name": "广场热评",
+          "disc": "最实时的消息"
+        },
+        {
+          "type": 0,
+          "leftIcon": "",
+          "name": "好友动态",
+          "disc": "贵圈真热闹"
+        }
+      ]
+    },
+    {
+      "sData": {
+        "sType": 1,
+        "name": "片刻阅读",
+        "disc": "阅读乐趣 片刻拥有",
+        "height": 20
+      },
+      "rData": [
+        {
+          "type": 1,
+          "content":[
+            {"tag": "科技", "img": "keji", "src": "https://mp.weixin.qq.com/s?__biz=MzIxNjEzNjUzOQ==&mid=402020148&idx=2&sn=ccad14a9197c8dbc4700c40bb907e56c&chksm=058f590032f8d016e39a92b81735ab1e263ac2f4279d31fffcdee1da28ddb6f6359a2ec9da6c&mpshare=1&scene=1&srcid=0324NboJIv155vYIO10tMYiu&pass_ticket=f3C4z0K6I5g3jj08T3OSXLRTieGVzlbjyKzlzjEKP8EYhK5sCJ8vLGTbG2v9PrnZ#rd"},
+            {"tag": "经管", "img": "http://upload-images.jianshu.io/upload_images/1268909-22bbeb890734fa75.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240", "src": "https://mp.weixin.qq.com/s?__biz=MzIxNjEzNjUzOQ==&mid=402020148&idx=3&sn=a80f7f67d2d21328e165e2dd23b29fd1&chksm=058f590032f8d016ee5da2e2f0cba6ddbbaafd3994eaffb9eb2a1f0bd79c3a3d4e106d83f1e5&mpshare=1&scene=1&srcid=0324qePIYLNVBlsLgNg3iqFS&pass_ticket=f3C4z0K6I5g3jj08T3OSXLRTieGVzlbjyKzlzjEKP8EYhK5sCJ8vLGTbG2v9PrnZ#rd"},
+            {"tag": "人文", "img": "http://upload-images.jianshu.io/upload_images/1268909-eb17f7ebd778d091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240", "src": "https://mp.weixin.qq.com/s?__biz=MzIxNjEzNjUzOQ==&mid=402020148&idx=4&sn=1e54c10974c4efacd78d7fc3d0da60bd&chksm=058f590032f8d01672f3915426c29bc8ec9c06e421035c75acc61f9a7ea703f988135e1bfd0d&mpshare=1&scene=1&srcid=0324tPTnIcMYww2umI344Yxi&pass_ticket=f3C4z0K6I5g3jj08T3OSXLRTieGVzlbjyKzlzjEKP8EYhK5sCJ8vLGTbG2v9PrnZ#rd"}
+          ]
+        }
+      ]
+    },
+    {
+      "sData": {
+        "sType": 1,
+        "name": "开心一刻",
+        "height": 20
+      },
+      "rData": [
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-574cb9d3e1bdeacc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列01",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_01.mp4"
+        },
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-b00075fcd85eb12f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列02",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_02.mp4"
+        },
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-bcbef6e05f6c3882.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列03",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_03.mp4"
+        },
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-37620e9e90785e96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列04",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_04.mp4"
+        },
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-177bfc1c6eb231ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列05",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_05.mp4"
+        },
+        {
+          "type": 2,
+          "img": "http://upload-images.jianshu.io/upload_images/1268909-b00075fcd85eb12f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+          "title": "小黄人搞笑系列06",
+          "video": "http://120.25.226.186:32812/resources/videos/minion_06.mp4"
+        }
+      ]
+    }
+  ]
+}
